@@ -1,5 +1,5 @@
 name: serverpod_api_versioning
-description: Simplified API version compatibility helper for Serverpod & Flutter clients.
+description: API version compatibility helper for Serverpod & Flutter clients.
 version: 1.0.0
 homepage: https://github.com/komossolutions/serverpod_api_versioning
 
