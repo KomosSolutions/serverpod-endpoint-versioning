@@ -1,5 +1,5 @@
 import 'package:package_info_plus/package_info_plus.dart';
-import 'package:serverpod_api_versioning/semantic_version.dart';
+import 'package:serverpod_api_versioning/serverpod_api_versioning.dart';
 
 ///
 /// Version check result.
@@ -31,7 +31,7 @@ class VersionChecker {
         final info = await getServerInfo();
         final minVersion = info['minClientVersion'] as String;
 
-        final ok = SemanticVersion.isCompatible(clientVersion, minVersion);
+        final ok = ServerpodAPIVersioning.isCompatible(clientVersion, minVersion);
 
         return VersionCheckResult(compatible: ok, info: info);
     }
