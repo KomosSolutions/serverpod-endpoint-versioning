@@ -1,4 +1,4 @@
-# serverpod_api_versioning
+# Serverpod API Versioning
 
 A lightweight, reusable package for client/server API version compatibility checking in Serverpod projects.
 
@@ -15,7 +15,7 @@ Add to your `pubspec.yaml`:
 
 ```yaml
 dependencies:
-  serverpod_api_versioning: ^0.1.0
+  serverpod_api_versioning: ^1.0.0
 ```
 
 ## Usage
@@ -34,6 +34,6 @@ if (!result.compatible) {
 ```
 
 This works by using Semantic version comparison, so 1.2.0 is compatible with 1.1.0: 
-    ``` dart
-    final isCompatible = SemVer.isCompatible("1.2.0", "1.1.0");
-    ```
+``` dart
+   final isCompatible = SemVer.isCompatible("1.2.0", "1.1.0");
+```
